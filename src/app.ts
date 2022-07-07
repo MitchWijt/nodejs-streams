@@ -3,9 +3,9 @@ import {getAllItems} from "./index";
 
 const app = express()
 
-app.get("/get-students", async (req, res) => {
-    const students = await getAllItems()
-    res.json(students)
+app.get("/get-items", async (req, res) => {
+    const items = await getAllItems()
+    res.json(items)
 })
 
 app.get("/random-action", async (req, res) => {
